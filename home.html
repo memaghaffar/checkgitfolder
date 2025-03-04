@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>user emailis: <script>
+
+
+document.write(localStorage.getItem('email1'))
+
+    </script></h2>
+
+    <button type="submit" onclick="logiout()">logout</button>
+
+
+    <script>
+        function logiout(){
+            localStorage.removeItem("name1")
+            localStorage.removeItem("email1")
+            localStorage.removeItem("pass1")
+            localStorage.removeItem("add1")
+            window.location.href="login.html"
+        }
+    </script>
+</body>
+</html>

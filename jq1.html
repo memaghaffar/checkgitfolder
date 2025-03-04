@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, numquam!
+    </p>
+    <p id="textclicked">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, numquam!
+    </p> -->
+
+<!-- TASK 1 -->
+<!-- <p id="oldtext">THIS IS MY OLD TEXT</p>
+<button id="btn">chnage text</button> -->
+
+
+<!-- TASK 2 CHNAGE BG COLOR USING HOVER -->
+ <!-- <div id="box" style="background-color: red; width: 100px;height: 100px;"></div> -->
+
+
+ <!-- TASK 3 HIDE |SHOW -->
+
+<!-- <p id="showdata">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, praesentium.</p>
+<button id="btn">hide | show</button> -->
+
+
+<!-- task 4 add data list -->
+
+<input type="text" id="getdata" placeholder="enter data">
+<button id="btn">adddata</button>
+<ul id="storedata"></ul>
+
+<script src="jquery.min.js"></script>
+
+    <script>
+
+//task 4 add list 
+
+$(document).ready(function(){
+$('#btn').click(function(){
+  var abcdata= $('#getdata').val();
+  if(abcdata !==" "){
+   $('#storedata').append("<li>" + abcdata + "</li>")
+   $('#getdata').val(" ")
+  }
+})
+})
+
+
+
+// task 3 hide show
+
+// $(document).ready(function(){
+//     $('#btn').click(function(){
+//         $('#showdata').toggle();
+//     })
+// })
+
+//task 2 chnage color using hover
+
+// $(document).ready(function(){
+//     $('#box').hover(function(){
+//         $(this).css("background","blue")
+//     }, function(){
+//         $(this).css("background","red")
+//     })
+// })
+
+
+
+//task 1 |chnage text
+
+//    $(document).ready(function(){
+//      $('#btn').click(function(){
+//         $('#oldtext').text('THIS IS MY NEW TEXT')
+//      })
+//    })
+
+
+
+// $(document).ready(function(){
+//  // console.log($);
+//       //('selector').action
+//       $("p").click(function () {
+//         $('#textclicked').hide();
+//         // console.log('p is clicked');
+//       });
+// })
+
+     
+
+      console.log(jQuery);
+    </script>
+  </body>
+</html>
